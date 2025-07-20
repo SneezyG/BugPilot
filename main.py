@@ -3,6 +3,7 @@ from classify import classify_bug
 from embed import store_ticket, search_similar
 from pydantic import BaseModel
 import os
+import uvicorn
 
 app = FastAPI()
 
@@ -22,3 +23,9 @@ async def classify(ticket: BugTicket):
 @app.post("/search")
 async def search(query: SearchQuery):
     return search_similar(query.query)
+
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
