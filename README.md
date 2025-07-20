@@ -4,6 +4,8 @@ A FastAPI backend that uses AI to classify bug reports and enables semantic sear
 
 ## [BugPilot code repo](.)
 
+---
+
 ## 🚀 Features
 
 - 🧠 Auto-classifies bug tickets (tags, category, summary) using AI
@@ -11,11 +13,15 @@ A FastAPI backend that uses AI to classify bug reports and enables semantic sear
 - ⚡ Stateless, API-first design — easy to integrate into any workflow
 - 🧩 AI as a service — Built on AI servives & Exposed as AI services.
 
+---
+
 ## 🏗️ Architecture
 
 Client → FastAPI →  
 - `/classify`: Classifies + embeds + stores in Weaviate  
 - `/search`: Embeds query → finds similar bugs via vector search
+
+---
 
 ## 🧰 Tech Stack
 
@@ -25,16 +31,22 @@ Client → FastAPI →
 - **Vector DB**: Weaviate (Dockerized)
 - **API Style**: REST / JSON
 
+---
+
 ## 📡 API Endpoints
 
 - `POST /classify`: Classifies bug (tags, category, summary) + stores in vector DB
 - `POST /search`: Returns semantically similar bugs from history
+
+---
 
 ## 📌 Use Cases
 
 - Auto-tagging and triaging tickets
 - Duplicate bug detection
 - Semantic search for support/dev teams
+
+---
 
 ## 🧠 Philosophy
 
