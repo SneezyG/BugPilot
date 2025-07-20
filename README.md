@@ -2,7 +2,7 @@
 
 A FastAPI backend that uses AI to classify bug reports and enables semantic search over historical tickets using embeddings and a Vector DB.
 
-## [BugPilot code repo](.)
+## [See BugPilot Code Repo](.)
 
 ---
 
