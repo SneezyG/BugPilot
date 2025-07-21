@@ -1,4 +1,4 @@
-# 🐞 BugPilot: AN AI Assistant for Bug Ticket Triage.
+# 🐞 BugPilot: An AI Assistant for Bug Ticket Triage.
 
 A Intelligent system that uses AI to classify bug reports and enables semantic search over historical tickets using embeddings and a Vector DB.
 
