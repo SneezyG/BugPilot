@@ -1,6 +1,6 @@
 # 🐞 BugPilot: AI Assistant for Bug Ticket Triage.
 
-A FastAPI backend that uses AI to classify bug reports and enables semantic search over historical tickets using embeddings and a Vector DB.
+A Intelligent system that uses AI to classify bug reports and enables semantic search over historical tickets using embeddings and a Vector DB.
 
 ## [See BugPilot Code Repo](https://github.com/SneezyG/BugPilot)
 
@@ -12,6 +12,14 @@ A FastAPI backend that uses AI to classify bug reports and enables semantic sear
 - 🔍 Semantic search using AI powered embeddings + Weaviate(A vector DB)
 - ⚡ Stateless, API-first design — easy to integrate into any workflow
 - 🧩 AI as a service — Built on AI servives & Exposed as AI services.
+
+---
+
+## 📌 Use Cases
+
+- **Auto-tagging and triaging tickets** – Automatically classifies and prioritizes bug reports using AI-driven tagging and severity assessment.
+- **Duplicate bug detection** – Identifies and links similar or repeated issues by comparing bug descriptions semantically.
+- **Semantic search for support/dev teams** – Enables natural language search over historical tickets for faster issue resolution and reference.
 
 ---
 
@@ -37,14 +45,6 @@ Client → FastAPI →
 
 - `POST /classify`: Classifies bug (tags, category, summary) + stores in vector DB
 - `POST /search`: Returns semantically similar bugs from history
-
----
-
-## 📌 Use Cases
-
-- Auto-tagging and triaging tickets
-- Duplicate bug detection
-- Semantic search for support/dev teams
 
 ---
 
